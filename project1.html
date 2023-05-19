@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="project.css">
+  </head>
+  <body>
+    <menu class="menu">
+      <header>
+        <img src="logo.png" alt="">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News Letter</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">What's New</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>Thats What<br/><span>I Like</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <a href="#">View All Products</a>
+        </div>
+        <div class="imgBox">
+          <img src="pepsi001.png" class="pepsi">
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBg('#0062be')"></li>
+        <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBg('#e60c2c')"></li>
+        <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBg('#1e1e1e')"></li>
+      </ul>
+      <ul class="sci">
+        <li><a href="#"><img src="facebook.png"></a></li>
+        <li><a href="#"><img src="instagram.png"></a></li>
+        <li><a href="#"><img src="twitter.png"></a></li>
+      </ul>
+    </menu>
+    <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.pepsi').src=anything;
+      }
+      function changeBg(anything){
+        document.querySelector('.menu').style.background=anything;
+      }
+
+    </script>
+    </body>
+
+</html>
